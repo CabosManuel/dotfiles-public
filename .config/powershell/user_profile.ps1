@@ -6,13 +6,18 @@
 
 # ####################################################
 # Pasos para configurar este archivo user_profile.ps1
-# ####################################################
+# ----------------------------------------------------
 #
 # 1. Crear archivo o copiar en .config
 # mkdir .config/powershell
 # nvim .config/powershell/user_profile.ps1
 #
-# 2. Agregar las más configuraciones:
+# 2. Agregar configuraciones.
+#
+# 3. Configurar $PROFILE.CurrentUserCurrentHost para los Alias, agregando como primera línea
+# nvim $PROFILE.CurrentUserCurrentHost
+# . $env:USERPROFILE\.config\powershell\user_profile.ps1
+# ####################################################
 
 # Temas ----------------------------------------------
 # Descomentar uno de estos temas o agregar otro (https://ohmyposh.dev/docs/themes):
@@ -27,10 +32,6 @@ Set-Alias ll ls
 Set-Alias grep findstr
 Set-Alias vim nvim
 Set-Alias less 'C:\Program Files\Git\usr\bin\less.exe'
-
-# 3. Configurar $PROFILE.CurrentUserCurrentHost para los Alias, agregando como primera línea
-# nvim $PROFILE.CurrentUserCurrentHost
-# . $env:USERPROFILE\.config\powershell\user_profile.ps1
 
 # Íconos ---------------------------------------------
 # 1. Instalar
