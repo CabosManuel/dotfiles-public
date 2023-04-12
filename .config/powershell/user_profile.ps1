@@ -32,6 +32,7 @@ Set-Alias ll ls
 Set-Alias grep findstr
 Set-Alias vim nvim
 Set-Alias less 'C:\Program Files\Git\usr\bin\less.exe'
+Set-Alias php 'C:\xampp\php\php.exe'
 
 # Íconos ---------------------------------------------
 # 1. Instalar
