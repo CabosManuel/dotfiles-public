@@ -21,8 +21,8 @@
 
 # Temas ----------------------------------------------
 # Descomentar uno de estos temas o agregar otro (https://ohmyposh.dev/docs/themes):
-#oh-my-posh init pwsh --config "$env:POSH_THEMES_PATH\kushal.omp.json" | Invoke-Expression
-oh-my-posh init pwsh --config "$env:POSH_THEMES_PATH\clean-detailed.omp.json" | Invoke-Expression
+oh-my-posh init pwsh --config "$env:POSH_THEMES_PATH\kushal.omp.json" | Invoke-Expression # My fav
+#oh-my-posh init pwsh --config "$env:POSH_THEMES_PATH\clean-detailed.omp.json" | Invoke-Expression # Tema que usa Fazt
 #oh-my-posh init pwsh --config "$env:POSH_THEMES_PATH\agnosterplus.omp.json" | Invoke-Expression
 #oh-my-posh init pwsh --config "$env:POSH_THEMES_PATH\quick-term.omp.json" | Invoke-Expression
 #oh-my-posh init pwsh --config "$env:POSH_THEMES_PATH\night-owl.omp.json" | Invoke-Expression
@@ -40,6 +40,16 @@ Set-Alias php 'C:\xampp\php\php.exe'
 #
 # 2. Agregar configuración a este user_profile.ps1
 Import-Module Terminal-Icons
+
+# PSReadLine (Autocompletion)
+# 1. Instalar
+# Install-Module -Name PSReadLine -AllowPrerelease -Scope CurrentUser -Force -SkipPublisherCheck
+#
+# 2. Agregar configuraciones a este user_profile.ps1
+Set-PSReadLineOption -EditMode Emacs	# Mejor edicion de texto
+Set-PSReadLineOption -BellStyle None	# Desactivar sonido de campana cuando alcanzas el borde
+Set-PSReadLineOption -PredictionSource History
+Set-PSReadLineOption -PredictionViewStyle ListView
 
 # Utilidades -----------------------------------------
 # - Comando which
