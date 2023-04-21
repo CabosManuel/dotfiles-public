@@ -3,6 +3,9 @@
 
 # Instalar neovim ------------------------------------
 # scoop install neovim gcc
+# 
+# [Opcional] Cambiar idioma de neovim en PowerShell (https://github.com/neovim/neovim/issues/11045#issuecomment-532947994) 
+# $env:LC_MESSAGES="en-US"
 
 # ####################################################
 # Pasos para configurar este archivo user_profile.ps1
