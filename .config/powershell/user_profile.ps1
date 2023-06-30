@@ -5,7 +5,9 @@
 # scoop install neovim gcc
 # 
 # [Opcional] Cambiar idioma de neovim en PowerShell (https://github.com/neovim/neovim/issues/11045#issuecomment-532947994) 
-$env:LC_MESSAGES="en-US"
+# <!> También cambia el idioma del PowerShell y no muestra bien las tildes o caracteres especiales <!>
+#
+# $env:LC_MESSAGES="en-US"
 
 # ####################################################
 # Pasos para configurar este archivo user_profile.ps1
@@ -24,9 +26,11 @@ $env:LC_MESSAGES="en-US"
 
 # Temas ----------------------------------------------
 # Descomentar uno de estos temas o agregar otro (https://ohmyposh.dev/docs/themes):
-oh-my-posh init pwsh --config "$env:POSH_THEMES_PATH\kushal.omp.json" | Invoke-Expression # My fav
+#oh-my-posh init pwsh --config "$env:POSH_THEMES_PATH\kushal.omp.json" | Invoke-Expression # My fav
+#oh-my-posh init pwsh --config "$env:POSH_THEMES_PATH\powerlevel10k.omp.json" | Invoke-Expression
+oh-my-posh init pwsh --config "$env:POSH_THEMES_PATH\negligible.omp.json" | Invoke-Expression
+
 #oh-my-posh init pwsh --config "$env:POSH_THEMES_PATH\clean-detailed.omp.json" | Invoke-Expression # Tema que usa Fazt
-#oh-my-posh init pwsh --config "$env:POSH_THEMES_PATH\agnosterplus.omp.json" | Invoke-Expression
 #oh-my-posh init pwsh --config "$env:POSH_THEMES_PATH\quick-term.omp.json" | Invoke-Expression
 #oh-my-posh init pwsh --config "$env:POSH_THEMES_PATH\night-owl.omp.json" | Invoke-Expression
 
